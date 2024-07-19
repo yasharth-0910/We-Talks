@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { useBlog } from "../hooks"
 import { FullBlog } from "../components/FullBlog";
 import { Spinner } from "../components/Spinner";
-import App from "../App";
 import { Appbar } from "../components/Appbar";
 
 
@@ -13,7 +12,7 @@ export const Blog = () => {
     const {blog, loading} = useBlog({
         id: id || ""
     });
-    if (loading) {
+    if (loading || !blog) {
         return (
             <div>
                 <Appbar />

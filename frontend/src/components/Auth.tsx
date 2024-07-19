@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { ChangeEvent, ChangeEventHandler,useState } from "react"
+import { useState } from "react"
 import { signupInput } from "@singh_yasharth/medium-common";
 import axios from "axios";
 import { BACKEND_URL } from "../config";
