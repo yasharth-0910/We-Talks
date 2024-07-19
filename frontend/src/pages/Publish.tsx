@@ -211,7 +211,7 @@ function TextEditor({onChange} : {onChange: (e: React.ChangeEvent<HTMLTextAreaEl
                             <textarea 
                                 onChange={onChange}
                                 id="editor"
-                                rows="8"
+                                rows= {10}
                                 className=" focus:outline-none block w-full px-0 text-sm bg-white border-0 focus:ring-0"
                                 placeholder="Write an article..."
                                 required
